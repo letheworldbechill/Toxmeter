@@ -1,1 +1,39 @@
-<!-- index.html placeholder -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toxxometer - Reality Check</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header>
+  <h1>Toxxometer / Reality Check</h1>
+  <div class="header-actions">
+    <button id="theme-toggle">☾ / ☀</button>
+    <select id="lang-select">
+      <option value="de" selected>Deutsch</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+</header>
+<main>
+  <section class="intro">
+    <p class="lead">Beantworte die Fragen / Answer the questions</p>
+  </section>
+  <section id="survey-area" class="card">
+    <div id="questions" class="stack"></div>
+    <div id="result" class="result"></div>
+    <div class="actions">
+      <button id="save-run">Save / Speichern</button>
+      <button id="clear-history">Clear History / Löschen</button>
+    </div>
+  </section>
+  <section id="history-area" class="card">
+    <h2>History / Verlauf</h2>
+    <div id="history-list">No entries / Keine Einträge</div>
+  </section>
+</main>
+</body>
+</html>
